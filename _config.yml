@@ -1,8 +1,8 @@
 title: Jason Liao
 description: > # this means to ignore newlines until "baseurl:"
-  Write an awesome description for your new site here. You can edit this
-  line in _config.yml. It will appear in your document head meta (for
-  Google search results) and in your feed.xml site description.
+  This is the Engineering Portfolio of Jason Liao, 
+  a third year Mechatronic Systems Engineering student at SFU 
+  and a team lead for the SFU Ascension Robotics club (https://ascensionrobomaster.com/)
 permalink: ':title/'
 baseurl: "/JasonLiaoEngiPortfolio" # the subpath of your site, e.g. /blog
 url: "https://jsonx1ng.github.io" # the base hostname & protocol for your site, e.g. http://example.com
@@ -11,7 +11,7 @@ site-twitter: #if your site has a twitter account, enter it here
 # Author Settings
 author: Jason Liao # add your name
 author-img: profpic.jpg # add your photo
-about-author: I am a web developer focusing on front-end development. Always hungry to keep learning. # add description
+about-author: Third year Mechatronic Systems Engineering student at SFU and aspiring Roboticist # add description
 social-twitter: # add your Twitter handle
 social-facebook: # add your Facebook handle
 social-github: JsonX1ng # add your Github handle
