@@ -14,7 +14,13 @@ Designed and manufactured the turret of our University team's Sentry Robot for t
 - Achieve Pitch and Yaw control with 2 BLDC motors
 - Fibreglass composite construction made from waterjet plates
 
-![Turret Cross Section]({{site.baseurl}}/assets/img/Turret_Cross_Section2.png)
+<div class="post-content">
+    <div class="image-row">
+        <img src="{{ '/assets/img/Turret_Cross_Section2.png' | relative_url }}" alt="Turret Cross Section" style="width: 30%; max-width: 30%;">
+        <img src="{{ '/assets/img/Solidworks_Sentry_2025.png' | relative_url }}" alt="Sentry in Solidworks" style="width: 70%; max-width: 70%;">
+    </div>
+</div>
+
 Cross Section of the ball path from the indexers through the hollow pitch motor and into the flywheels
 
 Firing test for a 3D printed prototype of the Sentry

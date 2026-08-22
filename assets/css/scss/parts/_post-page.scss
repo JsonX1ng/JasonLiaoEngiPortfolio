@@ -46,6 +46,35 @@
   }
 }
 
+// Added wrapper
+.post-content .image-row {
+  display: flex;
+  gap: 1rem;
+  margin: 1.5rem 0;
+  align-items: flex-start;
+}
+
+.post-content .image-row img {
+  width: calc(50% - 0.5rem);
+  max-width: calc(50% - 0.5rem);
+  height: auto;
+  object-fit: cover;
+  border-radius: 8px;
+  display: block;
+}
+
+@media (max-width: 700px) {
+  .post-content .image-row {
+    flex-direction: column;
+  }
+
+  .post-content .image-row img {
+    width: 100%;
+    max-width: 100%;
+  }
+}
+//
+
 .page-footer {
   display: flex;
   justify-content: space-between;
