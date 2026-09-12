@@ -23,7 +23,6 @@ Figure 2: Cross section of the projectile path from the indexers to the flywheel
 - Final construction made from waterjet-cut fibreglass composite plates and 3D printed PPA-CF
 - Electrically connects to the chassis through a pogo pin PCB
 
-
 <div class="post-content">
     <div class="image-row">
         <img src="{{ '/assets/img/Sentry_Assesment_2025_gif.gif' | relative_url }}" alt="Firing test for a 3D printed prototype of the Sentry" style="width: 70%; max-width: 70%;">
@@ -37,6 +36,8 @@ Figure 4: Tuning the Sentry's tracking of other robot's armous plate
 - Many, many indexer iterations were tested and scraped due to projectiles jamming at high indexing speeds. Ultimately, an indexer with a spiral path was chosen to allow the indexing motor to reverse direction to clear jams
 - Stacking the ammo hopper above the mainboard enclosure made electrical maintainence difficult at times
 - The turret's high moment of inertia made tuning the yaw rotation difficult
+- When the firing flywheels spin up, the centripedal force expands them slightly, risking contact with a nearby cable, additional cable trays had to be added
+
 
 <div class="post-content">
     <div class="image-row">
