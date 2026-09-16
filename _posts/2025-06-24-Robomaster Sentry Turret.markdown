@@ -30,7 +30,7 @@ Figure 2: Cross section of the projectile path from the indexers to the flywheel
     </div>
 </div>
 Figure 3: Firing test for a 3D printed prototype of the Sentry for the 2025 technical assessment  
-Figure 4: Tuning the Sentry's tracking of other robot's armous plate
+Figure 4: Tuning the Sentry's autonomous tracking of other robot's armour plates
 
 **Challenges:**
 - Many, many indexer iterations were tested and scraped due to projectiles jamming at high indexing speeds. Ultimately, an indexer with a spiral path was chosen to allow the indexing motor to reverse direction to clear jams
