@@ -33,10 +33,10 @@ Figure 3: Firing test for a 3D printed prototype of the Sentry for the 2025 tech
 Figure 4: Tuning the Sentry's autonomous tracking of other robot's armour plates
 
 **Challenges:**
-- Many, many indexer iterations were tested and scraped due to projectiles jamming at high indexing speeds. Ultimately, an indexer with a spiral path was chosen to allow the indexing motor to reverse direction to clear jams
-- Stacking the ammo hopper above the mainboard enclosure made electrical maintainence difficult at times
-- The turret's high moment of inertia made tuning the yaw rotation difficult
-- When the firing flywheels spin up, the centripedal force expands them slightly, risking contact with a nearby cable, additional cable trays had to be added
+- Many, many indexer iterations were tested and scraped due to projectiles jamming at high indexing speeds. Ultimately, an indexer with a spiral path was chosen to allow the indexing motor to reverse direction to clear jams.
+- Stacking the ammo hopper above the mainboard enclosure made electrical maintainence difficult at times.
+- The turret's high moment of inertia made tuning the yaw rotation difficult.
+- When the firing flywheels spin up, the centripedal force expands them slightly, risking contact with a nearby cable, additional cable trays had to be added.
 
 
 <div class="post-content">

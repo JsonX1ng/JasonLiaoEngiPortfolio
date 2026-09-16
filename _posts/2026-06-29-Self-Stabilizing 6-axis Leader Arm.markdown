@@ -16,12 +16,14 @@ tags: [STM32, CAN bus, UART] # add tag
 <div class="post-content">
     <div class="image-row">
         <img src="{{ 'assets/img/Custom_Controller_2POVS_GIF.gif' | relative_url }}" alt="Testing the Custom Controller" style="width: 40%; max-width: 50%;">
-        <img src="{{ 'assets/img/Custom_Controller_Self_Balancing_GIF.gif' | relative_url }}" alt="Showing the leader arm self-balancing" style="width: 34%; max-width: 50%;">
+        <img src="{{ 'assets/img/Custom_Controller_Self_Balancing_GIF.gif' | relative_url }}" alt="Showing the leader arm self-stabilizing" style="width: 34%; max-width: 50%;">
     </div>
 </div>
+Figure 1: Another view of the leader arm controlling the arm of the engineer robot  
+Figure 2: Counterweights balancing the leader arm in any position
 
 **How:**
-- Wrote a CAN bus driver library for the [K-Tech MS4005V3](https://lkmtech.en.alibaba.com/) mini servo motors, implementing the communication protocol to read motor position, set motor PID, and set motor velocity and torque.
+- Wrote a CAN bus driver library for the LK-Tech MS4005V3 mini servo motors, implementing the communication protocol to read motor position, set motor PID, and set motor velocity and torque.
 - Implemented Free-RTOS tasks on the STM32 development board to read joint encoder positions, stabilize the wrist joints, and transmit commands via UART to the Robomaster Client.
 - Designed adjustable counterweights on each link to balance the mass of the downstream links.
 - Programmed a button and LED to calibrate the zero position of all the servo motors.
