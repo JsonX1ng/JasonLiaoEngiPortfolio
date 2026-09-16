@@ -8,7 +8,7 @@ tags: [PLC, HMI] # add tag
 ---
 
 ### What I did:
-- Wrote PLC Add on Instrucitons (AOIs) in Studio 5000 to prevent a pair of quadrant Shiploaders from colliding with each other and a spout changeout tower using GNSS coordinates.
+- Wrote PLC Add on Instructions (AOIs) in Studio 5000 to prevent a pair of quadrant Shiploaders from colliding with each other and a spout changeout tower using GNSS coordinates.
 - Created Automation Design Documents (ADDs) and performed Factory Acceptance Tests (FATs) for multiple PLC programs and their respective HMIs
 - Debugged and wrote software factory acceptance tests and videos for a Stacker-Reclaimer's HMI in FactoryTalk View Studio
 - Used Grafana, Influx DB, and NodeRED to historize PLC tags for an existing Shiploader

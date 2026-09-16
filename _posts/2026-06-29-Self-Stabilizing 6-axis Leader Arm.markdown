@@ -3,15 +3,15 @@ layout: post
 title: Self-Stabilizing 6-axis Leader Arm
 date: 2026-06-29 00:00:00 -0700
 description: Coded, wrote the drivers for, and manufactured a self-stabilizing 6-axis leader arm  # Add post description (optional)
-img: Custom_Controller_Pic.png # Add image post (optional)
+img: Engi_First_Block_Gif.gif # Add image post (optional)
 fig-caption: # Add figcaption (optional)
 tags: [STM32, CAN bus, UART] # add tag
 ---
-**Coded, wrote the drivers for, and manufactured a self-stabilizing 6-axis leader arm as a custom controller for my University team's "Engineer Robot"**
+**Coded, wrote the drivers for, and manufactured a self-stabilizing 6-axis leader arm as a custom controller for my university team's "Engineer Robot"**
 
 **Results:**
-- Allowed the driver of the engineer robot to control all 6-axis of the serial robot arm with 1 hand in an intuitive way
-- Led to our team winning **2nd place** for the Engineer robot category at the 2026 [ARC Robotics Competition](https://www.arc-robotics.org/) in Purdue, Indiana
+- Enabled the driver to control all 6 axes of the Engineer Robot's serial arm with one hand, providing an intuitive way to directly manipulate the robot's joints.
+- Contributed to our team winning **2nd place** in the Engineer robot category at the 2026 [ARC Robotics Competition](https://www.arc-robotics.org/) in Purdue, Indiana.
 
 <div class="post-content">
     <div class="image-row">
@@ -21,16 +21,18 @@ tags: [STM32, CAN bus, UART] # add tag
 </div>
 
 **How:**
-- Wrote a CAN bus driver library for the [K-Tech MS4005V3](https://www.robomaster.com/zh-CN) mini servo motors used in the design
-- Implemented Free-RTOS tasks to read joint encoder positions, stabilize the wrist joints, and send the package via UART to the Robomaster Client
-- Designed adjustable counterweights on each link to balance the mass of the subsequent links
-- Programmed a button and LED to calibrate the 0 position of all the servo motors
+- Wrote a CAN bus driver library for the [K-Tech MS4005V3](https://lkmtech.en.alibaba.com/) mini servo motors, implementing the communication protocol to read motor position, set motor PID, and set motor velocity and torque.
+- Implemented Free-RTOS tasks on the STM32 development board to read joint encoder positions, stabilize the wrist joints, and transmit commands via UART to the Robomaster Client.
+- Designed adjustable counterweights on each link to balance the mass of the downstream links.
+- Programmed a button and LED to calibrate the zero position of all the servo motors.
+
+[**See the code for the leader arm custom controller here:**](https://github.com/JsonX1ng/ASN-Engineer-Custom-Controller)
 
 **Challenges:**
-- Encountered and debugged issues where the CAN bus mailbox buffer would fill up and drop messages
-- Added a watchdog to prevent undefined behaviour when the Robomaster Client timed out
+- Debugged CAN communication issues caused by the mailbox buffer filling and dropping messages.
+- Encountered a wrist-joint singularity in certain arm configurations that could cause one motor to rotate unexpectedly. This was fixed by adding addtional resisting torque to the preceding wrist motor.
+- Implemented a watchdog to prevent undefined behaviour when the Robomaster Client timed out.
 
 **Background:**
-The "Engineer" robot is a specialized robot in the ARC (Formerly Robomaster North America) competition designed to manipulate field elements for points. This year, the goal of the competition was to grab and place large foam cubes into slots with random orientations. Our team achieved this with a Mecanum drive chassis equipped with with a 6-axis robot arm featuring a suction-cup end effector.  
-
-I designed the aforementioned 6-axis leader arm to help control the joints of the robot mounted
+The "Engineer" robot is a specialized robot in the ARC (Formerly Robomaster North America) competition designed to manipulate field elements for points. This year, the goal of the competition was to grab and place large foam cubes into slots with random orientations. Our team achieved this with a Mecanum drive chassis equipped with a 6-axis robot arm featuring a suction-cup end effector.  
+I designed the aforementioned 6-axis leader arm that mirrors the configuration of the robot's joints allowing the driver to manipulate the robot arm intuitively.
