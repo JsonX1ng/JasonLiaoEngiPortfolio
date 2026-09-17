@@ -1,6 +1,6 @@
 # Jason Liao Engineering Portfolio
 
-https://jsonx1ng.github.io/JasonLiaoEngiPortfolio/
+[Click here for my engineering portfolio](https://jsonx1ng.github.io/portfolio/)
 
 ## License
 
