@@ -4,7 +4,7 @@ description: > # this means to ignore newlines until "baseurl:"
   a third year Mechatronic Systems Engineering student at SFU 
   and a team lead for the SFU Ascension Robotics club (https://ascensionrobomaster.com/)
 permalink: ':title/'
-baseurl: "/JasonLiaoEngiPortfolio" # the subpath of your site, e.g. /blog
+baseurl: "/portfolio" # the subpath of your site, e.g. /blog
 url: "https://jsonx1ng.github.io" # the base hostname & protocol for your site, e.g. http://example.com
 
 # Author Settings
